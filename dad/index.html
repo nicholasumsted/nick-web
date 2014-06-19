@@ -1,0 +1,64 @@
+<html>
+
+<head>
+   <title>Happy Fathers Day</title>  
+    <style>
+    body {
+    background-color:blue;
+      color:red;
+        text-align: center;
+    }
+        button {
+            padding: 8px 10px;
+            background-color: #ff97a4;
+            color:blue;
+            font-size: 1.5em;
+        }
+        h1{margin-top:30px;}
+        
+    .results{
+        margin-top:30px;
+        font-size: 1.2em;
+    }
+    
+    </style>
+    
+    <script>
+        var funnyThings = ['We love you so much.',
+                           'We also like when you take us camping.',
+                           'you are always nice to us.',
+                           'You take care of us.',
+                           'You love to spend time with us and let us have chances we might have never been able to do.',
+                           'We are glad that you\'re our father.'
+                                     
+                           
+                           
+                           
+                           
+                           
+                          ];
+        function answerQuestion(){
+            var index = Math.floor(Math.random() * (funnyThings.length));
+            document.getElementById('results').innerHTML = funnyThings[index];           
+        }
+    
+    </script>
+    
+    </head>
+<body>
+    
+ <h1>Happy Fathers Day</h1> 
+    
+<button onclick="answerQuestion()">Click for a special message</button>
+    
+ <div id="results" class="results"></div>   
+    
+    
+    </body>
+
+
+
+
+
+
+</html>

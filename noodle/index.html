@@ -1,0 +1,55 @@
+<html>
+
+<head>
+   <title>Noodle</title>  
+    <style>
+    body {
+    background-color: #2900ff;
+        color:#f8e964;
+    }
+        
+    
+    
+    </style>
+    
+    <script>
+        var funnyThings = ['To get to the other side',
+                           'The sky is blue, I\'m pretty sure',
+                           'Yes',
+                           'No',
+                           'I said no, really I did',
+                            'I don\'t know',
+                           'Did you eat my pop tart?',
+                           'I ate your pop tart',
+                           'Jasmine ate Sarah\'s pop tart',
+                           'Mom is home',
+                           'Ask something else'
+                        
+                          ];
+        function answerQuestion(){
+            var index = Math.floor(Math.random() * (funnyThings.length-1));
+            document.getElementById('results').innerHTML = funnyThings[index];           
+        }
+    
+    </script>
+    
+    </head>
+<body>
+    
+ <h1>       Welcome To NOODLE</h1> 
+    <p>Ask a question below</p>
+    
+    <input placeholder=" Enter here to search"/>
+<button onclick="answerQuestion()"> search</button>
+    
+ <div id="results"></div>   
+    
+    
+    </body>
+
+
+
+
+
+
+</html>
