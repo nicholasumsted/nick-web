@@ -1,0 +1,65 @@
+<html>
+
+<head>
+   <title>C3PO Play Bank</title>  
+    <style>
+    body {
+    background-color:#ebe500;
+      color:#505729;
+    }
+       
+        .container {
+            width: 200px;
+            margin: 0 auto;
+        }
+        .block {
+            margin-top: 150px;
+            position: relative;
+            width: 100%;
+        }
+        
+    
+    
+    </style>
+    
+    <script>
+        
+        function displayMessage(){
+            document.getElementById('results').innerHTML = "Please wait for money.";
+        }
+                           
+                           
+                           
+                       
+                           
+                          
+        function answerQuestion(){
+            var index = Math.floor(Math.random() * (funnyThings.length));       
+        
+            document.getElementById('results').innerHTML = funnyThings[index];           
+        }
+    
+    </script>
+    
+    </head>
+<body>
+    
+    <div class="container">
+        <div class="block">
+            <h1>C3PO's bank</h1> 
+            <p>"Not a real bank just for play."</p>
+            <input placeholder="How Much Money"/><br>
+            <input placeholder="Password,starwars Bank"/><br>
+            <button onclick="displayMessage()"> Get your money here,just click </button>
+                                                       <button onclick="answerQuestion()">Click for guest acount</button> <div id="results"></div>   
+        </div>
+    </div>
+    
+</body>
+
+
+
+
+
+
+</html>
