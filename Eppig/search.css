@@ -20,6 +20,12 @@ body {
     }
 }
 
+.results-block {
+    width: 100%;
+    color: #666666;
+    font-size: 2em;
+}
+
 .inner-search-box {
     width: 100%;
     margin-top: 100px;

@@ -1,29 +1,41 @@
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="search.css"/>
-        <title>EpPiG</title>
-        <style>
-            body {
-                background-color: #edff4b;
-                color: #fff;
-            }
-            .inner-search-box .title{
-                color: #045dfc;
-            }
-            .inner-search-box .search{
-                color: #000;
-                border-color:  black;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="inner-search-box">
-                <div class="title">
-                    ePpIg
-                </div>
-                <input class="search" id="search-terms" name="search-terms" placeholder="What are you looking for?"/>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="search.css" />
+    <title>EpPiG</title>
+    <style>
+        body {
+            background-color: #edff4b;
+            color: #fff;
+        }
+        .inner-search-box .title {
+            color: #045dfc;
+        }
+        .inner-search-box .search {
+            color: #000;
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner-search-box">
+            <div class="title">
+                ePpIg
             </div>
+            <input class="search" id="search-terms" name="search-terms" placeholder="What are you looking for?" onkeypress="isEnter(event)" />
         </div>
-    </body>
+        <div id="search-results" class="results-block"></div>
+    </div>
+
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="./search.js"></script>
+<script>
+    $(function () {
+        searcher.bindToSearch('#search-terms', '#search-results');
+    });
+</script>
+
 </html>
