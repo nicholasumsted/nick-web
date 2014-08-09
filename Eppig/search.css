@@ -1,36 +1,30 @@
 body {
     margin: 0;
-    font: 15px arial,sans-serif;
+    font: 15px arial, sans-serif;
 }
-
 .container {
     width: 900px;
     margin: 0 auto;
 }
-
 @media (max-width: 900px) {
     .container {
         width: 500px;
     }
 }
-
 @media (max-width: 500px) {
     .container {
         width: 100;
     }
 }
-
 .results-block {
     width: 100%;
     color: #666666;
     font-size: 2em;
 }
-
 .inner-search-box {
     width: 100%;
     margin-top: 100px;
 }
-
 .inner-search-box .title {
     font-size: 3em;
     color: #555555;
@@ -38,18 +32,16 @@ body {
     text-align: center;
     margin: 10px 0 10px 0;
 }
-
 .inner-search-box .search {
     font-size: 2em;
     line-height: 2.0em;
     padding-left: 3px;
     padding-right: -3px;
-    width:80%;
+    width: 80%;
     margin: 50px 10% 0 10%;
     outline: none;
     border-color: #555555;
 }
-
 .clearfix:after {
     content: ".";
     display: block;

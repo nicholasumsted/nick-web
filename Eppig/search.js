@@ -2,12 +2,6 @@ var searcher = {
     searchInput: null,
     searchResults: null,
 
-    bindToSearch: function (searchInputSelector, searchResultsSelector) {
-        this.searchInput = $(searchInputSelector);
-        $(this.searchInput).bind('keypress', this.isEnter);
-        this.searchResults = $(searchResultsSelector);
-    },
-
     startSearch: function (terms) {
         var self = this;
         this.callSearch(terms).done(
@@ -15,7 +9,7 @@ var searcher = {
                 self.displayResults(data.RelatedTopics);
             }
         ).fail(
-            function( p1, message){
+            function (p1, message) {
                 self.displayMessage(message);
             }
         );
@@ -39,8 +33,8 @@ var searcher = {
     displayResults: function (topics) {
         $(this.searchResults).html('<br/>');
         for (var topic in topics) {
-            if(topics[topic].Result!==undefined){
-                $(this.searchResults).append(topics[topic].Result+'<br/><br/>');
+            if (topics[topic].Result !== undefined) {
+                $(this.searchResults).append(topics[topic].Result + '<br/><br/>');
             }
         }
     },
@@ -57,6 +51,11 @@ var searcher = {
                 return false;
             }
         }
-    }
+    },
 
+    bindToSearch: function (searchInputSelector, searchResultsSelector) {
+        this.searchInput = $(searchInputSelector);
+        $(this.searchInput).bind('keypress', searcher.isEnter);
+        this.searchResults = $(searchResultsSelector);
+    }
 }
