@@ -37,8 +37,8 @@ var SceneGame = Class.create(Scene, {
         label = new Label('Score: 0');
         label.x = 100;
         label.y = 7;
-        label.color = '#4d148c';
-        label.font = '16px strong "Comic Sans MS", cursive, sans-serif';
+        label.color = '#ffffff';
+        label.font = '16px strong Arial, sans-serif';
         label.textAlign = 'center';
         //label._style.textShadow ="-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black";
         this.scoreLabel = label;        
@@ -249,8 +249,8 @@ var SceneGameOver = Class.create(Scene, {
         scoreLabel = new Label('Your Score<br>' + score);
         scoreLabel.x = 9;
         scoreLabel.y = 80;
-        scoreLabel.color = '#4d148c';
-        scoreLabel.font = '20px strong "Comic Sans MS", cursive, sans-serif';
+        scoreLabel.color = '#ffffff';
+        scoreLabel.font = '20px strong Arial, sans-serif';
         scoreLabel.textAlign = 'center';
         this.addChild(bgend);
         //this.addChild(gameOverLabel);
