@@ -17,49 +17,36 @@
             width: 100%;
         }
     </style>
-    
+
     <script>
         var funnythings = ['Please wait while your order is being made'];
-
-
-
-
-
-        function answerMesssage() {
-
-
-
-
-
-            var index = math.floor(math.random() *
-                funnythings.length - 1));
-
-        document.getElementById('results').innerHTML = funnythings[index];
-
-    
+        function answerquestion() {
+            var index = 0;
+            //var index = Math.floor(Math.random() * funnythings.length - 1);
+            document.getElementById('results').innerHTML = funnythings[index];
         }
     </script>
 
 </head>
 
 <body>
-    
+
     <h1> Welcome to yostraunt</h1>
-    
+
     <p>type in all of the stuff below!</p>
-    
-     <input placeholder="How many kids/adults"/>
-    
-    <input placeholder="Table/Booth"/>
-    
-    <input placeholder="Drinks"/>
-    
-    <input placeholder="Food"/>
-    
-    <button onclick="(answerquestion)">Click to send</button>
-    
-<div id="results"></div>
+
+    <input placeholder="How many kids/adults" />
+
+    <input placeholder="Table/Booth" />
+
+    <input placeholder="Drinks" />
+
+    <input placeholder="Food" />
+
+    <button onclick="answerquestion()">Click to send</button>
+
+    <div id="results"></div>
 
 </body>
-    
+
 </html>
