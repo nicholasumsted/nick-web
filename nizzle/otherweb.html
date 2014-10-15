@@ -1,0 +1,60 @@
+<html>
+
+<head>
+   <title>E2D2</title>  
+    <style>
+    body {
+    background-color:white;
+      color:blue;
+    }
+        
+        
+    
+    
+    </style>
+    
+    <script>
+        var funnyThings = ['Han fly away to safety',
+                           'RRAAHH!!!',
+                           'Luke I am your Father Nooo!!!',
+                           ' Shock him E2',
+                           'Iciest potatoes',
+                           'Me thinkest you silly',
+                           'Use the force',
+                           'I like icecream',
+                           'Mr. E2D2 is tired of you asking questions', 
+            'Give me fifty dollars I want fifty dollars',                      'Never tell me the odds!',   
+                'E2 see if you can get more power'           
+                           
+                           
+                           
+                           
+                           
+                          ];
+        function answerQuestion(){
+            var index = Math.floor(Math.random() * (funnyThings.length));
+            document.getElementById('results').innerHTML = funnyThings[index];           
+        }
+    
+    </script>
+    
+    </head>
+<body>
+    
+ <h1>E2D2</h1> 
+    <p>Ask E2D2 a question</p>
+    
+    <input placeholder="Beep,Beep,Beep,Beep"/>
+<button onclick="answerQuestion()"> search</button>
+    
+ <div id="results"></div>   
+    
+    
+    </body>
+
+
+
+
+
+
+</html>
