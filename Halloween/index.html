@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--<html manifest="offline.manifest">-->
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta name="expires" content="0">
+        <!--<meta name="viewport" content="width=320, initial-scale=1" />-->
+        <meta name="viewport" content="width=320, height: device-height,user-scalable=0" />
+        <!--<meta name="viewport" content="width=320, minimum-scale=1.0, maximum-scale=1.0" />-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta charset="utf-8">
+        <title>Happy Plane</title>
+        <script src="js/lib/enchant.js"></script> 
+        <script src="js/main.js"></script>
+        <style>
+            body{
+                margin:0;
+                background-color: #222222;
+            }
+            #enchant-stage{
+                width: 320px;
+                height:440px;
+                margin:0 auto;
+                top:100px;
+            }
+            @media only screen and (max-width: 800px){
+                #enchant-stage{
+                    top:0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <div id="enchant-stage">
+    </div>
+    </body>
+</html>

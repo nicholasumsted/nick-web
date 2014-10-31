@@ -1,0 +1,62 @@
+<html>
+
+<head>
+   <title>Nizzle</title>  
+    <style>
+    body {
+    background-color:#c400ff;
+      color:#0a00ff;
+    }
+        
+        
+    
+    
+    </style>
+    
+    <script>
+        var funnyThings = ['Han fly away to safety',
+                           'RRAAHH!!!',
+                           'Luke I am your Father Nooo!!!',
+                           ' Shock him E2',
+                           'Iciest potatoes',
+                           'Me thinkest you silly',
+                           'Use the force',
+                           'I like icecream',
+                           'Mr. E2D2 is tired of you asking questions', 
+            'Give me fifty dollars I want fifty dollars',                      'Never tell me the odds!',   
+                'E2 see if you can get more power'           
+                           
+                           
+                           
+                           
+                           
+                          ];
+        function answerQuestion(){
+            var index = Math.floor(Math.random() * (funnyThings.length));
+            document.getElementById('results').innerHTML = funnyThings[index];           
+        }
+    
+    </script>
+    
+    </head>
+<body>
+    
+ <h1>Nizzle</h1> 
+    <p>Sign In</p>
+
+    <input placeholder="nizzle acount"/>
+
+   
+    <input placeholder="Password"/>
+<button onclick="answerQuestion()">Login</button> 
+ <div id="results"></div>   
+    
+    
+    </body>
+
+
+
+
+
+
+</html>
