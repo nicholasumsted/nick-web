@@ -1,0 +1,64 @@
+<html>
+
+<head>
+   <title>Happy Birthday To You</title>  
+    <style>
+    body {
+    background-color:#44c9fa;
+      color:#0080ff;
+        text-align: center;
+    }
+        button {
+            padding: 8px 10px;
+            background-color: #fff;
+            color: #0093ff;
+            font-size: 1.5em;
+        }
+        h1{margin-top:30px;}
+        
+    .results{
+        margin-top:30px;
+        font-size: 1.2em;
+    }
+    
+    </style>
+    
+    <script>
+        var funnyThings = ['We love you so much.',
+                           'We also like when you cook for us.',
+                           'You are always nice.',
+                           'You take care of us.',
+                           'You love to spend time with us and let us have chances we might have never been able to do.',
+                           'We are glad that you\'re our mother',
+                            'They do everything'         
+                           
+                           
+                           
+                           
+                           
+                          ];
+        function answerQuestion(){
+            var index = Math.floor(Math.random() * (funnyThings.length));
+            document.getElementById('results').innerHTML = funnyThings[index];           
+        }
+    
+    </script>
+    
+    </head>
+<body>
+    
+ <h1>Happy Bithday Mom</h1> 
+    
+<button onclick="answerQuestion()">Click for a special message</button>
+    
+ <div id="results" class="results"></div>   
+    
+    
+    </body>
+
+
+
+
+
+
+</html>
