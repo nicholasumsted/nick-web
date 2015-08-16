@@ -1,5 +1,7 @@
+<html>
 
-
+    <head>
+    
 <h1>The nauhty list</h1>
 
 <title>The Naughty List</title>
@@ -15,7 +17,7 @@ Mr. Unicorn<br>
 Ellise<br>
 Jack<br>
 Mike<br>
-Miiler<br>
+Miller<br>
 Chad<br>
 Elf 101<br>
 Elfypants 1<br>
@@ -28,19 +30,65 @@ color:#000;
     background-color: #d8d074;
    font-family: cursive 
 }
+    
+     button {
+            padding: 8px 10px;
+            background-color: #fffdc0;
+            color: #666666;
+            font-size: 1.5em;
+    
+          }
+        h1{margin-top:30px;}
+        
+    .results{
+        margin-top:30px;
+        font-size: 1.2em;
+    }
+         
 </style>
 
-<h1>The nice list</h1>
 
-Nicholas<br>
+
+<h1>The nice list</h1>
 Matthew<br>
+Nicholas<br>
+Sarah<br>
 Hope<br>
 Scott<br>
 Janet<br>
 Julie<br>
+Jasmine<br>        
 Jim<br>
 Pat<br>
+Jay<br>
+Clair<br>
+David<br>
+Jackson<br>
 
+<script>
+    
+     function editPage(){
+            var index = Math.floor(Math.random() * (funnyThings.length));
+            document.getElementById('results').innerHTML = funnyThings[index];           
+        } 
+    
+    
+    
+    </script>
 
-
-
+        
+        </head>
+        
+    <body>
+    
+        
+        <button onclick="editpage()">Click to edit</button>
+    
+ <div id="results" class="results"></div>   
+    
+        
+        
+        
+    </body>
+        
+</html>

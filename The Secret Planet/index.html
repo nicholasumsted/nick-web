@@ -1,0 +1,72 @@
+<html>
+
+<head>
+   <title>The Secret Planet</title>  
+    <style>
+    body {
+    background-color:rgb(0, 0, 0);
+      color:tan;
+        text-align: center;
+    }
+
+        h1{margin-top:30px;}
+        
+    .results{
+        color:#ebff00;
+        margin-top:30px;
+        font-size: 1.2em;
+    }
+    #sphere{
+        width:300px;
+        height:300px;
+        border-radius: 200px;
+        border-color: transparent;
+        background: -webkit-radial-gradient(100px 100px, circle, #48a553, #0e0a43);
+  background: -moz-radial-gradient(100px 100px, circle, tan, tan);
+  background: radial-gradient(100px 100px, circle, tan, #000);
+                    padding: 8px 10px;
+            color: #c616a4;
+            font-size: 1.5em;
+    }
+    </style>
+    
+    <script>
+        var funnyThings = ['ask again.',
+                           'maybe.',
+                           'yes.',
+                           'no.',
+                           'unicorn fuzz.',
+                           'why not.',
+                            'I/m Author King of the Briten what do you want?', 
+                           'turn me off now i/m tired of you messing around with me so go.',
+                           'Balogney chair'
+                           
+                           
+                           
+                           
+                          ];
+        function changeSphere(){
+            var index = Math.floor(Math.random() * (funnyThings.length));
+            document.getElementById('results').innerHTML = funnyThings[index];           
+        }
+    
+    </script>
+    
+    </head>
+<body>
+    
+ <h1></h1> 
+    
+<button id="sphere" onclick="changeSphere()">ask a question</button>
+    
+ <div id="results" class="results"></div>   
+    
+    
+    </body>
+
+
+
+
+
+
+</html>
